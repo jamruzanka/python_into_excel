@@ -10,10 +10,8 @@ row_number = 0
 column_number = 0
 for line in my_file:
     elements = line.split(",")
-    print(">>>>",elements)
     for element in elements:
         key = column_letters[column_number]+str(row_number + 1)
-        print(">>>>",key,element)
         ws1[key] = element
         column_number += 1
     row_number += 1
